@@ -49,8 +49,8 @@ produces a labeled image that counts the available parking spots. With this, dri
 ## Risks and Mitigation
 | Risk | Probability | Plan B |
 |---|---|---|
-| The model works on the PKLot cameras but fails on a different lot or angle (domain shift) | High | Test on your own 30 to 50 photos and report the gap honestly. If the gap is large, label a small set of your own images in Roboflow and fine-tune lightly, or state clearly that the system is scoped to fixed-camera views like PKLot's. |
-| Training fails, Colab disconnects, or data handling takes too long | Med | Save checkpoints to Google Drive and switch to Kaggle if needed. If training still fails, fall back to the pretrained model that counts cars, and put your effort into the application logic and evaluation. This matches the Project Guide's recovery plan. |
+| The model works on the PKLot cameras but fails on a different lot or angle (domain shift) | High | Test on 30 to 50 photos and report the gap honestly. If the gap is large, label a small set of images in Roboflow and fine-tune lightly, or state clearly that the system is scoped to fixed-camera views like PKLot's. |
+| Training fails, Colab disconnects, or data handling takes too long | Med | Save checkpoints to Google Drive and switch to Kaggle if needed. If training still fails, fall back to the pretrained model that counts cars, and put effort into the application logic and evaluation. This matches the Project Guide's recovery plan. |
 
 ## Demo Video
 [Link goes here at the Final]
